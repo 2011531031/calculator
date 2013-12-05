@@ -30,6 +30,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="AC:" destination="2" eventType="touchUpInside" id="Ri4-ID-L2F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UIG-vt-6zL">
                                 <rect key="frame" x="90" y="111" width="60" height="50"/>
@@ -42,6 +45,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="plus_or_minus:" destination="2" eventType="touchUpInside" id="2AR-hL-al1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DiV-A7-C5N">
                                 <rect key="frame" x="170" y="111" width="60" height="50"/>
@@ -54,6 +60,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="division:" destination="2" eventType="touchUpInside" id="b6X-Gm-Vv0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ui5-hz-2eM">
                                 <rect key="frame" x="250" y="111" width="60" height="50"/>
@@ -66,6 +75,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="multiplication:" destination="2" eventType="touchUpInside" id="MM2-Od-1KV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rde-nu-ek3">
                                 <rect key="frame" x="250" y="181" width="60" height="50"/>
@@ -78,6 +90,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="subtraction:" destination="2" eventType="touchUpInside" id="Iru-zn-c7U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x77-sI-S0c">
                                 <rect key="frame" x="250" y="251" width="60" height="50"/>
@@ -90,6 +105,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addition:" destination="2" eventType="touchUpInside" id="jgn-CG-BSv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dDg-5j-HUo">
                                 <rect key="frame" x="170" y="181" width="60" height="50"/>
@@ -227,7 +245,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qVk-Si-URH">
-                                <rect key="frame" x="250" y="311" width="60" height="130"/>
+                                <rect key="frame" x="250" y="321" width="60" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="=">
@@ -237,6 +255,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="equal:" destination="2" eventType="touchUpInside" id="i1n-p9-QMo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eiI-kW-eAE">
                                 <rect key="frame" x="170" y="391" width="60" height="50"/>
@@ -249,6 +270,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dot:" destination="2" eventType="touchUpInside" id="vtx-Il-9DN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mL3-9k-POI">
                                 <rect key="frame" x="10" y="391" width="140" height="50"/>
@@ -274,12 +298,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="64" y="77"/>
         </scene>
     </scenes>
     <classes>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="AC:"/>
+                <relationship kind="action" name="addition:"/>
+                <relationship kind="action" name="division:"/>
+                <relationship kind="action" name="dot:"/>
+                <relationship kind="action" name="equal:"/>
                 <relationship kind="action" name="inputNumber0:"/>
                 <relationship kind="action" name="inputNumber1:"/>
                 <relationship kind="action" name="inputNumber2:"/>
@@ -290,6 +320,9 @@
                 <relationship kind="action" name="inputNumber7:"/>
                 <relationship kind="action" name="inputNumber8:"/>
                 <relationship kind="action" name="inputNumber9:"/>
+                <relationship kind="action" name="multiplication:"/>
+                <relationship kind="action" name="plus_or_minus:"/>
+                <relationship kind="action" name="subtraction:"/>
                 <relationship kind="outlet" name="numberOutput" candidateClass="UILabel"/>
             </relationships>
         </class>

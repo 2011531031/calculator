@@ -10,7 +10,9 @@
 
 @interface ViewController : UIViewController{
     int currentNumber;
+    int exNumber;
 }
+
 
 - (IBAction)inputNumber0:(id)sender;
 - (IBAction)inputNumber1:(id)sender;
@@ -22,9 +24,16 @@
 - (IBAction)inputNumber7:(id)sender;
 - (IBAction)inputNumber8:(id)sender;
 - (IBAction)inputNumber9:(id)sender;
+- (IBAction)addition:(id)sender;
+- (IBAction)subtraction:(id)sender;
+- (IBAction)multiplication:(id)sender;
+- (IBAction)division:(id)sender;
+- (IBAction)equal:(id)sender;
+- (IBAction)plus_or_minus:(id)sender;
+- (IBAction)AC:(id)sender;
+- (IBAction)dot:(id)sender;
 
-
-
+@property enum {add,sub,mul,div} state;
 
 @property (weak, nonatomic) IBOutlet UILabel *numberOutput;
 
